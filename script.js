@@ -18,13 +18,47 @@ window.addEventListener('load', function(){
 
 
    function Concat(e){
-    if (e.target.innerText === 'Пункт 4') {
-        content[0].innerText   = 'Анна Каренина'  
-    }
-    if (e.target.innerText === 'Пункт 2') {
-        content[0].innerText   = 'Война и мир'  
-    }
+    // if (e.target.innerText === 'Пункт 4') {
+    //     content[0].innerText   = 'Анна Каренина'  
+    // }
+    // if (e.target.innerText === 'Пункт 2') {
+    //     content[0].innerText   = 'Война и мир'  
+    // }
     
+
+    switch(e.target.innerText){
+        case 'Пункт 1':
+            content[0].innerText   = 'Анна Каренина'    
+            break;
+        case 'Пункт 2':
+            content[0].innerText   = 'Война и мир'   
+            break;
+        case 'Пункт 3':
+            content[0].innerHTML   = '<img src=./img/hood.png>'
+            break;
+        case 'Пункт 4':   
+        break;
+        case 'Пункт 5':
+        break;
+        case 'Пункт 6':
+        break;
+        case 'Пункт 7':
+        break;
+        case 'Пункт 8':   
+        break;
+        case 'Пункт 9':   
+        break;
+        case 'Пункт 10':   
+        break;
+        case 'Пункт 11':   
+        break;
+        case 'Пункт 127':   
+        break;
+        default:
+            content[0].innerText = 'Не нашёл';
+    }
+
+
    }
 
    console.log(content);
